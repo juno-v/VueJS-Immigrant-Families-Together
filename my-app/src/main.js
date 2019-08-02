@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 // setting up router
 const routes = [
   {path: '/home', component: AdminLandingPage}, 
-  {path: '/events', component: Events}, 
+  {path: '/events', name:Events, component: Events}, 
   
 ]; 
 
