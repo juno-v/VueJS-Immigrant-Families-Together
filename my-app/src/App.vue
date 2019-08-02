@@ -1,22 +1,20 @@
 <template>
   <div id="app">
     <div class="header">
-      <img alt="Vue logo" src="./assets/logo.png">
-      <h1> Juno's awesome blog </h1>
-      <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+      <center>
+        <img alt="Vue logo" src="./assets/logo.png">
+      </center> 
     </div>
      <Container /> 
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Container from "./components/Container.vue"; 
 
 export default {
   name: 'app',
   components: {
-    //HelloWorld
     Container, 
   }
 }

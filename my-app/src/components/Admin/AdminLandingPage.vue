@@ -19,6 +19,8 @@
                     <button className="adminMenuButtons"
                     v-on:click="registerVolunteer"
                     >REGISTER VOLUNTEER</button> 
+
+                    <router-view></router-view>
                    
                 </center>
 </template>
