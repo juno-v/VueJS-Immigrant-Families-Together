@@ -7,12 +7,13 @@
 
 <script>
 export default {
+    name: 'events',
     methods: {
     }
   
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

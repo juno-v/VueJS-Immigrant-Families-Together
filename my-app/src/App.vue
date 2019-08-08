@@ -4,18 +4,18 @@
       <center>
         <img alt="Vue logo" src="./assets/logo.png">
       </center> 
+      <router-view></router-view>
     </div>
-     <Container /> 
   </div>
 </template>
 
 <script>
-import Container from "./components/Container.vue"; 
+
 
 export default {
   name: 'app',
   components: {
-    Container, 
+    
   }
 }
 </script>

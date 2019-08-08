@@ -4,9 +4,11 @@
                         <h1>MENU</h1>
                     </div>
 
-                    <button class="adminMenuButtons"
+                    <!-- <button class="adminMenuButtons"
                     v-on:click="viewEvents"
-                    >UPCOMING EVENTS</button> <br/> 
+                    >UPCOMING EVENTS</button> <br/>  -->
+
+                    <router-link class="adminMenuButtons" to="/events">UPCOMING EVENTS</router-link> <br/>
 
                     <button class="adminMenuButtons"
                     v-on:click="viewCases"
@@ -20,9 +22,6 @@
                     v-on:click="registerVolunteer"
                     >REGISTER VOLUNTEER</button> <br/> 
 
-                    <router-view></router-view>
-                   
-                   
                 </center>
 </template>
 
@@ -30,7 +29,8 @@
 export default {
     methods: {
         viewEvents() {
-            this.$router.push('/events');
+            console.log(`view events`);
+            router.push({ path: '/events' })
         },
         viewCases() {
             console.log(`view cases`);

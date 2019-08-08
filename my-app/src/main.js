@@ -1,23 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import VueResource from 'vue-resource'
 import App from './App.vue'
-
-import AdminLandingPage from "./components/Admin/AdminLandingPage.vue"
-import Events from "./components/Admin/Events/Events.vue"
+import routes from "./Routes.js"
 
 // enables use of plug in 
 Vue.use(VueRouter);
-
-// setting up router
-const routes = [
-  {path: '/home', component: AdminLandingPage}, 
-  {path: '/events', name:Events, component: Events}, 
-  
-]; 
+// Vue.use(VueResource);
 
 const router = new VueRouter({
   // ES6 property name and value equal's itself
-  routes
+  routes, 
 });
 
 Vue.config.productionTip = false
