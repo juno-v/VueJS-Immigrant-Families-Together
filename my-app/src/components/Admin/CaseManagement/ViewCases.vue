@@ -1,6 +1,6 @@
 <template>
-    <center>
-    <h1> EDIT CASE LIST </h1> 
+  <center>
+    <h1>CASE LIST </h1> 
     
     <label>SEARCH:</label>
     <input placeholder="NAME" type="text" />
