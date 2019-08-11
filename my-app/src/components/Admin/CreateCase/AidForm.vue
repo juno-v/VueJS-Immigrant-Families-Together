@@ -1,5 +1,6 @@
 <template>
    <center> 
+       <h1>AID FORM</h1>
         <div className="formDivs">
             <label>GROCERY PROGRAM</label>
             <input type="text"/>

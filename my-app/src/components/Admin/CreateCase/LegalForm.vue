@@ -1,5 +1,6 @@
 <template>
   <center>
+    <h1>LEGAL FORM</h1>     
     <div className="formDivs">
         <label>LAST COURT DATE</label> 
         <input type="date"/>

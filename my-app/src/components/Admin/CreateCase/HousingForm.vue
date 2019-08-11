@@ -1,5 +1,6 @@
 <template>
    <center>
+       <h1>HOUSING FORM</h1>     
         <div class="formDivs">
             <label>ADDRESS</label> 
             <input type="text"/> 

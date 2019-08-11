@@ -1,5 +1,6 @@
 <template>
    <center>
+       <h1>BOND FORM</h1>     
         <div class="formDivs">
             <label>ICE FACILITY</label> 
             <input type="text"/> 

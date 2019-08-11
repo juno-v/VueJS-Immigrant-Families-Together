@@ -1,5 +1,6 @@
 <template>
     <center>
+        <h1>CHILDREN FORM</h1>     
         <div class="formDivs">
 
         <label>NAME</label> 

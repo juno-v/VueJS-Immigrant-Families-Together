@@ -1,5 +1,6 @@
 <template>
    <center>
+       <h1>MEDICAL FORM</h1>     
         <div class="formDivs">
             <label>PRIMARY DOCTOR NAME</label> 
             <input type="text" /> 

@@ -1,5 +1,6 @@
 <template>
    <center>
+       <h1>BIO FORM</h1>       
         <div class="formDivs" >
             
             <label>FIRST NAME</label> 

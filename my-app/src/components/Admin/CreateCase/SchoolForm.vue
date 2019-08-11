@@ -1,5 +1,6 @@
 <template>
   <center>
+      <h1>SCHOOL FORM</h1>     
         <div class="formDivs">
             <label>SCHOOL NAME</label> 
             <input type="text"/>
