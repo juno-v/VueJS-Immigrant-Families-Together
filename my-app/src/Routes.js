@@ -39,6 +39,7 @@ export default [
     {path: '/close-case', component: CloseCase},
 
     /* imports for Creating Case Forms */
+    {path: '/bio-form', component: BioForm},
     {path: '/children-form', component: ChildrenForm},
     {path: '/medical-form', component: MedicalForm},
     {path: '/school-form', component: SchoolForm},
