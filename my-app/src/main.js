@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import VueResource from 'vue-resource'
 import App from './App.vue'
-import routes from "./Routes.js"
+import routes from "./routes.js"
 
 // enables use of plug in 
 Vue.use(VueRouter);
@@ -10,7 +10,8 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   // ES6 property name and value equal's itself
-  routes, 
+  routes: routes, 
+  mode: 'history'
 });
 
 Vue.config.productionTip = false
@@ -18,5 +19,5 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
   // set up final portion of route 
-  router, 
+  router: router, 
 }).$mount('#app')

@@ -11,9 +11,11 @@
         <router-link to="/cases">
             <button class="adminMenuButtons">CASE MANAGEMENT</button>
         </router-link> <br/>
+        
         <router-link to="/volunteers">
             <button class="adminMenuButtons">VOLUNTEERS</button>
         </router-link> <br/>
+        
         <router-link to="/register-volunteer">
             <button class="adminMenuButtons">REGISTER VOLUNTEERS</button>
         </router-link> <br/>
