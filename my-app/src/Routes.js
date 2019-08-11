@@ -11,9 +11,19 @@ import EditCase from "./components/Admin/CaseManagement/EditCase.vue";
 import AddCase from "./components/Admin/CaseManagement/AddCase.vue";
 import CloseCase from "./components/Admin/CaseManagement/CloseCase.vue";
 
+/* imports for Creating Case Forms */
+import BioForm from "./components/Admin/CreateCase/BioForm.vue";
+import ChildrenForm from "./components/Admin/CreateCase/ChildrenForm.vue";
+import MedicalForm from "./components/Admin/CreateCase/MedicalForm.vue";
+import SchoolForm from "./components/Admin/CreateCase/SchoolForm.vue";
+import HousingForm from "./components/Admin/CreateCase/HousingForm.vue";
+import AidForm from "./components/Admin/CreateCase/AidForm.vue";
+import BondForm from "./components/Admin/CreateCase/BondForm.vue"; 
+import LegalForm from "./components/Admin/CreateCase/LegalForm.vue";
+
 export default [
     /* imports for Admin landing page */
-    {path: '/', component: LandingPage},
+    {path: '/admin-landing', component: LandingPage},
     {path: '/events', component: Events},
     {path: '/cases', component: Cases},
     {path: '/volunteers', component: Volunteers},
@@ -24,6 +34,17 @@ export default [
     {path: '/edit-case', component: EditCase},
     {path: '/add-case', component: AddCase},
     {path: '/close-case', component: CloseCase},
+
+    /* imports for Creating Case Forms */
+    {path: '/bio-form', component: BioForm},
+    {path: '/children-form', component: ChildrenForm},
+    {path: '/medical-form', component: MedicalForm},
+    {path: '/school-form', component: SchoolForm},
+    {path: '/housing-form', component: HousingForm},
+    {path: '/aid-form', component: AidForm},
+    {path: '/bond-form', component: BondForm},
+    {path: '/legal-form', component: LegalForm},
+    
 
 
     
