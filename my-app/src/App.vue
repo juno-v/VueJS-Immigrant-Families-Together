@@ -1,12 +1,5 @@
 <template>
-  <div id="app">
-    <div class="header">
-      <center>
-        <img alt="Vue logo" src="./assets/logo.png">
-      </center> 
       <router-view></router-view>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -20,19 +13,476 @@ export default {
 }
 </script>
 
-
-/* scoped means only accessed in this component */
-<style scope>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
+<style >
+body{
+    margin:0px;
 }
 
-/* .container-inner {
-  background-color: green; 
-} */
+button,
+h1,
+h2,
+label,
+.alert,
+.eventh1,
+.eventP,
+.eventBody,
+.navH2,
+.navH3,
+.nav-link,
+.formButton
+ {
+  font-family: 'Heebo', sans-serif;
+}
+
+thead td,
+button{
+  color: white;
+  letter-spacing: 1px;
+}
+
+h1,h2{
+    color: rgb(118, 118, 118);
+}
+
+/*for case.js*/
+.caseHeader h1 {
+  margin-bottom:0;
+}
+.caseHeader h2 {
+  margin-top:5px;
+}
+
+label{
+    letter-spacing: .5px;
+    color: rgb(118, 118, 118);
+}
+
+.alert {
+    background-color:rgb(255, 255, 255);
+    margin: 30px;
+    text-align: center;
+}
+
+.formDivs {
+    background-color: #ffffff;
+    margin: 40px auto;
+}
+
+input, select {
+    width: 80%;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(118, 118, 118);
+    margin-bottom: 0 15px 5px;
+    background:transparent;
+    padding: 0 5px;
+}
+
+.log-in, .log-out, .register {
+    background-color: #00acb0;
+    border-radius: 4px;
+    color: #f8f8f8;
+    min-height: 50px;
+    min-width: 100px;
+    outline:0;
+    cursor: pointer;
+}
+
+.log-in:hover, .log-out:hover, .register:hover {
+    background-color: #008183;
+}
+
+.formButton{
+    margin-top: 10px;
+    height: 45px;
+    letter-spacing: 2px;
+    background-color: rgb(118, 118, 118);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 15px;
+    max-width:300px;
+    width:80%;
+    color: white;
+}
+
+label {
+  display:block;
+}
+.searchButton,
+.midButton{
+    height: 75px;
+    width: 90%;
+    max-width:300px;
+    letter-spacing: 2px;
+    background-color: rgb(118, 118, 118);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 15px;
+}
+
+.searchButton {
+  height:initial;
+  padding: 10px 0;
+}
+
+/* This line makes the "Register" and "Login" buttons look like links */
+.link-button {
+    background:none;
+    color:inherit;
+    border:none;
+    padding:0;
+    font: inherit;
+    outline:0;
+    border-bottom:1px solid #444; 
+    cursor: pointer;
+}
+
+
+
+.eventDivs,
+form,
+.formDivs,
+center {
+max-width:500px;
+margin:auto;
+}
+
+center {
+  margin-top:30px;
+}
+
+input {
+  margin-bottom:15px;
+}
+
+.eventDivs{
+    width:90%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(118, 118, 118);
+    margin: none;
+    margin-bottom:5px;
+}
+
+.cardHead{
+    width: 100%;
+    display:inline-flex;
+}
+
+
+
+
+.cardHeadLeft{
+    width:50%;
+    justify-content: left;
+}
+
+.cardHeadRight{
+    width:50%;
+    justify-content: right;
+}
+
+.eventh1{
+    margin-left: 15px;
+    margin-top:10px;
+    margin-bottom:0px;
+    font-size: 15px;
+    color: rgb(118, 118, 118);
+    letter-spacing: .5px;
+    text-align: left;
+}
+
+.eventP{
+    margin-right: 15px;
+    margin-top:10px;
+    margin-bottom:0px;
+    font-size: 15px;
+    color: rgb(118, 118, 118);
+    letter-spacing: .5px;
+    text-align: right;
+}
+
+.eventBody{
+    margin-left: 15px;
+    margin-top:0px;
+    font-size: 12px;
+    color: rgb(118, 118, 118);
+    letter-spacing: .5px;
+    text-align: left;
+}
+
+  .navH2,
+  .navH3{
+    font-size: 1em;
+    color: #f2f2f2;
+  }
+
+  @media (min-width:768px) {
+  .navH2,
+  .navH3{
+    font-size: 1.5em;
+  }
+}
+
+  
+
+  .navH3{
+    text-align: center;
+  }
+
+  .navH4{
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color:rgb(210, 47, 37);
+    text-align: center;
+    margin: none;
+  }
+
+  .navTitle{
+    
+    display: inline-block;
+    position: relative;
+  }
+
+  
+  .midButton,
+  .navLeft,
+  .navLeft2,
+  .navRight,
+  .navRight2,
+  a:visited,
+  a:hover,
+  a:active
+  {
+    color: white;
+  }
+  
+
+
+  .nav,
+  .nav_one_col {
+    overflow: hidden;
+    margin:none;
+    background-color:rgb(210, 47, 37);
+    text-align: center;
+    width: 100%;
+    height:65px;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items:center;
+  }
+
+  .nav_one_col {
+    display:block;
+  }
+
+  a > i {
+    color:white;
+  }
+
+  i{
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:white;
+  }
+
+  .nav-link {
+    height:65px;
+    width:75px;
+    margin:none;
+    background-color:rgb(210, 47, 37);
+    display: inline-block;
+    position: relative;
+    border-style:none;
+  }
+
+.hiddenButton{
+    height: 25px;
+    width: 100%;
+    background: transparent;
+    border: none !important;
+}
+
+.hiddenButton:focus{
+    outline:0
+}
+
+.subnavbar{
+  height: 50px;
+  background-color: #000000;
+  display: grid;
+  align-items: center;
+  grid-auto-flow:column;
+}
+
+
+.subNavSection a  {
+  text-decoration: none;
+  font-family: 'Heebo', sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: .65em;
+  text-align: center;
+}
+
+.subNavSection:first-of-type {
+  padding-left:5px;
+}
+
+table{
+  width: 90%;
+  background-color: #ffffff;
+  border: .5px solid rgb(153, 153, 153);;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+thead{
+  width: 100%;
+  background-color: #D22F25;
+  color: white;
+  font-family: 'Heebo', sans-serif;
+
+}
+
+th {
+padding:3px;
+align-content: center;
+}
+
+td{
+  text-align: left;
+  font-family: 'Heebo', sans-serif;
+  padding: 10px;
+  align-content: center;
+  color: rgb(97, 97, 97);
+  font-size:.7em;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #d6d6d6;
+  border-radius: 8px;
+}
+
+.PCard {
+  font-family: 'Heebo', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  letter-spacing: .5px;
+  color: rgb(118, 118, 118);
+  font-size: 15px; 
+}
+
+.bioCard {
+  width:80%;
+  border-radius: 8px;
+  /* padding:10px; */
+  /* background-color: #d6d6d6; */
+}
+
+.noteCard {
+  width:80%;
+  margin:5px;
+  padding:10px;
+  border-radius: 8px;
+  border: .5px solid rgb(153, 153, 153);
+}
+
+.PNote {
+  font-family: 'Heebo', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  letter-spacing: .5px;
+  color: rgb(118, 118, 118);
+  font-size: 15px; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3em auto;
+  font-family: 'Heebo', sans-serif;
+  color: rgb(118, 118, 118);
+}
+
+.grid-item {
+  text-align: center;
+  padding: 7px;
+  background-color: #D22F25;
+}
+.grid-item2{
+  text-align: left;
+  margin-left: 7px;
+  padding: 7px;
+}
+
+.volCard {
+  width:80%;
+  margin:5px;
+  border: .5px solid rgb(153, 153, 153);
+}
+
+.teamCard {
+    width:75%;
+    border-radius: 8px;
+    padding:10px;
+    /* background-color: #d6d6d6; */
+    border: .5px solid rgb(118, 118, 118);
+    margin-bottom: 20px;
+}
+
+img{
+  width:100%;
+}
+
+tr.inactive {
+  opacity:.3
+}
+
+ .activeInactive {
+  color:grey;
+  border:2px solid grey;
+  padding:5px 10px;
+  border-radius:5px;
+  background: transparent;
+  margin: 1em 0;
+} 
+
+.hiddenButton {
+  display:none;
+}
+
+.editButton {
+  background-color: #FF7C7C;
+  color: white;  
+  border-radius: 25px;
+}
+
+.adminMenuButtons{
+    height: 90px;
+    width:80%;
+    max-width: 300px;
+    color: #ffffff;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 2px;
+    background-color: rgb(118, 118, 118);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 15px;
+}
 </style>
